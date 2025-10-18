@@ -29,3 +29,23 @@ This repo covers Introduction to DB, keys, CRUD, Joins, aggregator queries, subq
 6. Row sequence is not guaranteed. SQL doesnt guarantee in which order rows will be returned on executing query. You need to explicitly use order by clause. Having said that MYSQl, return rows in order of their primary key but again its not part of SQL standard.
 
 7. Name of every column should be unique
+
+# Install MYSQL server (DBMS)
+
+1. Install MySQL Server (DBMS Server)
+Install Version 8.0 or higher
+https://dev.mysql.com/downloads/mysql/
+
+
+2. Install My SQL Workbench (UI Tool, Code Editor to execute SQL)
+About MySQL Workbench
+https://dev.mysql.com/downloads/workbench/
+
+
+3. Set up Sakila Database (DOWNLOAD) 
+https://downloads.mysql.com/docs/sakila-db.zip
+
+Execute the sakila-schema.sql script to create the database structure, and execute the sakila-data.sql script to populate the database structure, by using MySQLWorkbench.
+
+View the Database tables using MySQL Workbench.
+
