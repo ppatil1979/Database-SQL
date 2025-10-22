@@ -125,7 +125,18 @@ The sequence in which query executes is:
 
 FROM -> WHERE -> GROUP BY -> HAVING -> SELECT 
 
-WHERE is not build to be able to handle aggregates. We can not use WHERE after GROUP BY because WHERE clause works on rows and as soon as GROUP BY forms a result, the rows are convereted into groups. So, no individual conditions or actions can be performed on rows after GROUP BY. 
+WHERE is not build to be able to handle aggregates. We can not use WHERE after GROUP BY because WHERE clause works on rows and as soon as GROUP BY forms a result, the rows are convereted into groups. So, no individual conditions or actions can be performed on rows after GROUP BY.
+
+## Basic of query
+
+    Step 1 : select table have my information
+      Step 1.1 : do the Joins if required
+    Step 2 : Apply the filter
+    Step 3 : Group by
+      Step 3.1 : Filtering happen with `having` clause
+    Step 4 : Select what to pring including agreegator
+    Step 5 : Order by
+    Step 6 : Pagination (Limit, offset)
 
 # SUBQUERIES
 
